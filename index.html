@@ -1,0 +1,1086 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jr's Knockout Academy</title>
+    <meta name="description" content="Transforme dados em estratégias eficazes para o seu negócio. Consultoria de dados, análise de dados e soluções personalizadas.">
+    <meta name="keywords" content="consultoria de dados, análise de dados, soluções personalizadas, estratégias de visualização de dados, otimização de armazenamento de dados, integração de dados, PCO Core">
+
+    <!-- Adicione o trecho de código da fonte Montserrat aqui -->
+    <!-- Remova uma das referências à fonte Montserrat -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
+    <!-- Adicione o link para a biblioteca Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- Adicione o link para a biblioteca Slick Carousel -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-K8ESK7E810"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-K8ESK7E810');
+    </script>
+    <style>
+         body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat', sans-serif;
+            color: white; /* Alterado para cor branca */
+            background-color: #050505;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background-color: #555555;
+        }
+        
+        header img {
+            max-width: 15%;
+            height: auto;
+        }
+        
+        nav {
+            background-color: #D3D3D3;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            margin: 0 10px;
+            color: white; /* Alterado para cor branca */
+            text-decoration: none;
+            transition: background-color 0.3s ease-in-out;
+            background-color: transparent;
+            padding: 5px 10px;
+        }
+
+        nav a:hover {
+            background-color: rgb(255, 0, 0);
+            color: black; /* Alterado para cor preta */
+        }
+        section {
+            position: relative;
+            
+        }
+
+
+
+
+
+
+        .video-section {
+            position: relative;
+            width: 100%;
+            height: 500px; /* Altura do vídeo */
+            overflow: hidden;
+        }
+        
+        .background-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: brightness(0.5); /* Ajusta o brilho do vídeo para torná-lo meio-fosco */
+            opacity: 0.7; /* Ajusta a opacidade do vídeo */
+        }
+        
+        .content {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1;
+            text-align: center;
+            color: white; /* Cor do texto */
+            
+        }
+        
+        .image-section-content {
+            background-color: rgba(0, 0, 0, 0.5); /* Cor de fundo do texto com opacidade */
+            padding: 50px; /* Espaçamento interno do conteúdo */
+            width: 100%;
+            height: 100%;
+        }
+        
+        .image-section-content h2 {
+            margin: 10px 0;
+            font-size: 36px;
+            font-weight: bold;
+            margin-top: 30px;
+        }
+        
+        .image-section-content p {
+            margin: 5px 0;
+            font-size: 18px;
+        }
+        
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 20px;
+            background-color: #007bff; /* Cor de fundo do botão */
+            color: white; /* Cor do texto do botão */
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        
+        .button:hover {
+            background-color: #0056b3; /* Cor de fundo do botão ao passar o mouse */
+        }
+
+
+
+
+
+
+
+
+
+        
+        .imagem-sobre-nos {
+            width: 200px;
+            height: 200px;
+            /* Adicione outros estilos desejados aqui */
+        }
+        
+        
+                
+        
+
+
+
+
+
+
+
+
+
+
+
+
+        .image-section {
+            height: 400px; /* Altura da imagem */
+            background-image: url('OIG3.6opat.umGnjKqb-removebg-preview.png'); /* Substitua com o URL da sua imagem */
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        .image-overlay {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-color: rgba(10, 10, 10, 0.5); /* Branco translúcido */
+            background-color: #f0f0f0;
+        }
+
+        .image-section-content {
+            display: flex;
+            flex-direction: column;
+            color: white;
+            position: relative;
+            z-index: 1;
+            padding: 20px; /* Adiciona espaço ao redor do conteúdo */
+        }
+
+        .image-section h2 {
+            margin: 0;
+            font-size: 50px;
+            padding: 5px;
+            margin-top: 20px;
+            margin-bottom: 5px; /* Reduz o espaço abaixo do título */
+        }
+
+        .image-section p {
+            margin: 10px 0;
+            font-size: 25px;
+            text-align: center;
+        }
+
+        .button {
+            margin-top: 20px; /* Adicione um espaço entre o texto e o botão */
+            padding: 12px 20px; /* Ajuste o tamanho do botão aqui */
+            background-color: #f70d0d; /* Verde-água mais escuro */
+            color: white;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 10px; /* Cantos arredondados */
+            align-self: center; /* Centraliza o botão abaixo do texto */
+        }
+
+        /* Adiciona efeito de clique ao passar o mouse sobre a sessão */
+        .section-hover:hover {
+            background-color: #f0f0f0; /* Cor de fundo ao passar o mouse */
+        }
+
+        .section-hover1 {
+            max-width: 1000px; /* Defina a largura máxima desejada */
+            margin: 0 auto; /* Adiciona margens automáticas para centralizar na horizontal */
+            padding: 20px; /* Adiciona algum espaçamento interno */
+            background-color: #f0f0f0; /* Cor de fundo da sessão */
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .section-hover1:hover {
+            background-color: #ffe3c7; /* Altera a cor de fundo ao passar o mouse */
+        }
+
+        .section-hover2 {
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #faf9f9;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+            margin: 50px; /* Isso está duplicado, mantenha apenas uma vez */
+        }
+        
+
+        .section-hover2:hover {
+            background-color: #ffe3c7; /* Altera a cor de fundo ao passar o mouse */
+        }
+
+        h2 {
+            font-weight: bold;
+            font-size: 40px;
+            text-align: center;
+            margin-bottom: 20px; /* Adiciona espaço abaixo do título */
+            color: white;
+        }
+
+        .service-container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+            color: white;
+        }
+
+        .service {
+            width: 30%;
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+            border: 1px solid #ffe3c7;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+            color: white;
+        }
+
+        .service img {
+            max-width: 80%; /* Define a largura máxima das imagens */
+            height: auto; /* Mantém a proporção da imagem */
+            border-radius: 5px; /* Adiciona cantos arredondados às imagens */
+        }
+
+        .service:hover {
+            background-color: #f20e0e;
+        }
+
+        .testimonial-container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+            color: white;
+        }
+        
+        .testimonial {
+            width: 40%; /* Ajuste a largura conforme necessário */
+            padding: 20px;
+            text-align: center;
+            
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+            box-sizing: border-box; /* Garante que padding não aumente a largura total */
+        }
+        
+        .testimonial img {
+            max-width: 50%; /* Define a largura máxima das imagens */
+            height: auto; /* Mantém a proporção da imagem */
+            border-radius: 50%; /* Torna a imagem redonda */
+        }
+        
+        .testimonial:hover {
+            background-color: #f60707;
+        }
+
+
+
+
+        .service-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .service {
+            width: 30%;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .service video {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+        
+        .service h3 {
+            margin-top: 10px;
+            font-size: 20px;
+        }
+        
+        .service p {
+            font-size: 16px;
+        }
+
+
+
+
+        .section-hover2 {
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f0f0f0;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+            margin: 50px;
+        }
+        
+        
+        .section-content {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .section-text {
+            width: 60%;
+        }
+        
+        .section-text h2 {
+            font-weight: bold;
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+        
+        .section-text h3 {
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+        
+        .section-text p {
+            font-size: 18px;
+            
+            left: 200px;
+        }
+        
+        .section-image {
+            width: 35%;
+        }
+        
+        .section-image img {
+            width: 80%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+
+        .section-content {
+            display: flex;
+            flex-direction: row-reverse; /* Inverte a ordem dos itens na seção */
+        }
+        
+        .section-image {
+            margin-right: 20px; /* Adiciona um espaçamento à direita da imagem */
+            margin-left: 0; /* Remove o espaçamento à esquerda da imagem */
+        }
+        
+
+
+        .carousel-container {
+            max-width: 80%;
+            margin: 0 auto;
+            margin-top: 100px;
+            
+        }
+
+        .client-logo {
+            width: 150px; /* Ajuste conforme necessário */
+            height: auto;
+            margin: 0 auto;
+            margin-top: 100px;
+        }
+
+
+
+        /* Adicione este código ao seu bloco de estilos CSS existente */
+
+.about-us-section {
+    background-color: #f80707; /* Cor de fundo da seção "Sobre Nós" */
+    padding: 40px; /* Espaçamento interno da seção */
+    margin-top: 100px;
+}
+
+.section-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-text {
+    width: 60%;
+    color: white;
+}
+
+.section-text h2 {
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.section-text p {
+    font-size: 18px;
+    color: white;
+}
+
+.section-image {
+    width: 35%;
+}
+
+.section-image img {
+    width: 100%; /* Garante que a imagem preencha a largura da div */
+    height: auto;
+    border-radius: 10px;
+    
+}
+
+
+
+
+
+/* Adicione ao seu bloco de estilos CSS existente */
+
+.contact-section {
+    display: flex;
+    justify-content: space-between; /* Distribui os elementos horizontalmente */
+    align-items: flex-start; /* Alinha os elementos no topo */
+    color: white;
+    
+
+}
+
+.container {
+    width: 48%; /* Reduzi a largura para permitir espaço para as margens */
+}
+
+.contact-info {
+    width: 48%; /* Reduzi a largura para permitir espaço para as margens */
+}
+
+.container, .contact-info {
+    padding: 20px; /* Adiciona um espaço interno aos elementos */
+    box-sizing: border-box; /* Considera o padding no cálculo da largura */
+    margin-bottom: 100px;
+}
+
+input[type=text], textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    background-color: #ffe3c7
+}
+
+button {
+    background-color: #f80909;
+    color: white;
+    padding: 10px 16px; /* Reduzindo o preenchimento vertical e horizontal */
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+
+button:hover {
+    opacity: 0.8;
+}
+
+
+
+
+/* Estilos para o rodapé */
+footer {
+    background-color: #f90505; /* Cor de fundo do rodapé */
+    color: white; /* Cor do texto no rodapé */
+    padding: 40px 0; /* Espaçamento interno do rodapé */
+    text-align: center; /* Centraliza o conteúdo do rodapé */
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.company-info {
+    text-align: left; /* Alinha as informações da empresa à esquerda */
+}
+
+.social-media {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center; /* Centraliza os ícones de redes sociais */
+}
+
+.social-media a {
+    margin: 0 10px; /* Espaçamento entre os ícones */
+    color: white; /* Cor dos ícones de redes sociais */
+    font-size: 24px; /* Tamanho dos ícones */
+}
+
+.footer-navigation {
+    margin-top: 20px; /* Espaçamento superior da navegação do rodapé */
+}
+
+.footer-navigation a {
+    color: white; /* Cor dos links de navegação */
+    text-decoration: none; /* Remove sublinhado dos links */
+    margin: 0 10px; /* Espaçamento entre os links */
+    font-size: 16px; /* Tamanho dos links */
+}
+
+.whatsapp-floating {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+/* Estilos para dispositivos móveis */
+@media screen and (max-width: 768px) {
+    .company-info {
+        display: none; /* Esconde as informações da empresa em dispositivos móveis */
+    }
+
+    .social-media {
+        order: -1; /* Move os ícones de redes sociais para o início em dispositivos móveis */
+        margin-top: 20px; /* Espaçamento superior para os ícones de redes sociais em dispositivos móveis */
+    }
+
+    .footer-navigation {
+        margin-top: 40px; /* Aumenta o espaçamento superior da navegação do rodapé em dispositivos móveis */
+    }
+
+    .whatsapp-floating {
+        bottom: 70px; /* Ajusta a posição do ícone do WhatsApp flutuante em dispositivos móveis */
+    }
+
+    .company-info-mobile {
+        text-align: center; /* Centraliza o texto no rodapé em dispositivos móveis */
+        margin-top: 20px; /* Espaçamento superior para o texto no rodapé em dispositivos móveis */
+    }
+}
+
+
+
+
+
+
+.whatsapp-floating {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    color: #fff;
+    padding: 30px; /* Aumente o tamanho do padding para aumentar o ícone */
+    border-radius: 50%;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    cursor: pointer;
+}
+
+.whatsapp-floating i {
+    font-size: 40px; /* Ajuste o tamanho do ícone aqui */
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #fb0606;
+}
+
+header img {
+    max-width: 15%;
+    height: auto;
+}
+
+nav {
+    background-color: #D3D3D3;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    margin: 0 10px;
+    color: rgb(5, 5, 5);
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out; /* Transição da cor de fundo com duração de 0.3 segundos */
+    background-color: transparent; /* Define a cor de fundo inicial como transparente */
+    padding: 5px 10px; /* Adiciona um preenchimento interno para destacar melhor o efeito */
+}
+
+nav a:hover {
+    background-color: rgb(255, 0, 0); /* Define a cor de fundo como laranja ao passar o mouse */
+    color: white; /* Define a cor do texto como branco */
+}
+
+
+
+
+
+/* Estilos para telas médias */
+@media screen and (max-width: 768px) {
+    header img {
+        max-width: 30%;
+    }
+
+    .section-text,
+    .section-image {
+        width: 100%;
+    }
+
+    .service {
+        width: 100%;
+        margin-bottom: 20px; /* Adiciona espaço entre os serviços */
+    }
+
+    .testimonial {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .contact-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container, .contact-info {
+        width: 100%;
+    }
+
+    /* Reorganize a ordem da imagem e do texto para seções com imagens e texto */
+    .section-content {
+        flex-direction: column-reverse; /* Inverte a ordem dos elementos na seção */
+    }
+
+    /* Ajuste a ordem dos depoimentos */
+    .testimonial-container {
+        flex-direction: column; /* Empilha os depoimentos verticalmente */
+    }
+
+    @media only screen and (max-width: 768px) {
+        .carousel-container {
+            max-width: 100%; /* Ocupa toda a largura disponível */
+            margin-top: 50px; /* Reduz o espaçamento superior */
+        }
+    
+        .client-logo {
+            max-width: 100px; /* Reduz a largura máxima da imagem para caber em telas menores */
+        }
+    }
+}
+
+/* Estilos para telas pequenas */
+@media screen and (max-width: 520px) {
+    header img {
+        max-width: 50%;
+    }
+
+    .section-text,
+    .section-image {
+        width: 100%;
+    }
+
+    .service {
+        width: 100%;
+        margin-bottom: 20px; /* Adiciona espaço entre os serviços */
+    }
+
+    .testimonial {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .contact-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container, .contact-info {
+        width: 100%;
+    }
+
+    /* Reorganize a ordem da imagem e do texto para seções com imagens e texto */
+    .section-content {
+        flex-direction: column-reverse; /* Inverte a ordem dos elementos na seção */
+    }
+
+    /* Ajuste a ordem dos depoimentos */
+    .testimonial-container {
+        flex-direction: column; /* Empilha os depoimentos verticalmente */
+    }
+}
+
+/* ... (seus estilos existentes) */
+
+/* Estilos padrão para tamanhos de tela maiores */
+.image-section-content h2 {
+    font-size: 50px;
+}
+
+.image-section-content p {
+    font-size: 25px;
+}
+
+/* Adicione media queries para ajustar o tamanho da fonte para telas menores */
+@media screen and (max-width: 768px) {
+    .image-section-content h2 {
+        font-size: 40px;
+    }
+
+    .image-section-content p {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .image-section-content h2 {
+        font-size: 30px;
+    }
+
+    .image-section-content p {
+        font-size: 16px;
+    }
+}
+
+/* Restante do seu estilo para a seção de contato */
+.contact-section {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px; /* Defina o limite máximo de largura desejado */
+    margin: 0 auto; /* Centraliza a seção na página */
+}
+
+.container, .contact-info {
+    width: 48%; /* Ajusta a largura dos contêineres dentro da seção */
+}
+
+/* Adicione media queries para ajustar a largura dos contêineres para telas menores */
+@media screen and (max-width: 768px) {
+    .container, .contact-info {
+        width: 100%; /* Para ocupar toda a largura em telas menores */
+    }
+}
+/* Estilos padrão para telas maiores */
+.service-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Estilos para telas médias */
+@media screen and (max-width: 768px) {
+    .service-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service {
+        width: 100%;
+        margin-bottom: 20px; /* Adiciona espaço entre os serviços */
+    }
+}
+
+/* Estilos para telas pequenas */
+@media screen and (max-width: 520px) {
+    .service-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service {
+        width: 100%;
+        margin-bottom: 20px; /* Adiciona espaço entre os serviços */
+    }
+}
+
+
+        
+</style>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.slick-carousel').slick({
+                infinite: true,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 600
+            });
+        });
+    </script>
+</head>
+
+<body>
+<header>
+    
+    <img src="OIG3.6opat.umGnjKqb-removebg-preview.png" alt="DataInsights Solutions Logo">
+</header>
+
+
+
+<nav>
+    <a href="#sobre-nos" title="Saiba mais sobre a DataInsights Solutions">Sobre Nós</a>
+    <a href="#servicos" title="Conheça nossos serviços de consultoria e análise de dados">Serviços</a>
+    <a href="#depoimentos" title="Leia os depoimentos de nossos clientes">Depoimentos</a>
+    <a href="#contato" title="Entre em contato conosco">Contato</a>
+</nav>
+   
+<div class="video-section">
+    <video autoplay muted loop class="background-video">
+        <source src="1105067_1080p_4k_2k_1920x1080.mp4" type="video/mp4">
+        <!-- Adicione outros formatos de vídeo aqui, se necessário -->
+    </video>
+    <div class="content">
+        <div class="image-section-content">
+            <h2>"Desafie-se além dos limites,</h2>
+            <h2>liberte o guerreiro interior."</h2>
+            <p> </p>
+            <p> </p>
+            <a href="https://contate.me/pcocore" class="button">Saiba Mais</a>
+        </div>
+    </div>
+</div>
+
+
+    <section>
+        <div class="section-hover1">
+            <p>Na Jr's Knockout Academy, nós não apenas ensinamos boxe; moldamos campeões. </p>
+            <p>Com uma abordagem única e personalizada, nossa academia é mais do que um local de treinamento - é um ambiente que desafia, inspira e transforma. </p>
+            
+            <p>Sob a orientação do renomado Jr, nossa equipe de instrutores apaixonados está empenhada em desbloquear o potencial de cada aluno, desde iniciantes até competidores experientes. </p>
+            <p>Nossa missão é simples: elevar o seu jogo, fortalecer sua mente e corpo, e capacitá-lo a alcançar novos patamares de excelência no ringue e na vida. Bem-vindo à Jr's Knockout Academy, onde os limites são desafiados e os sonhos se tornam realidade.</p>
+        </div>
+    </section>
+
+
+    <section id="servicos"></section>
+
+        <h2>Serviços</h2>
+
+        <div class="service-container">
+            <div class="service">
+                <video src="1105994_1080p_4k_2k_1920x1080.mp4" autoplay muted loop alt="Consultoria de Dados"></video>
+                <h3>Energize sua vida com o Boxe</h3>
+                <p>Nossos treinos de boxe não apenas fortalecem seu corpo, mas também revigoram sua mente. Sinta-se mais enérgico, confiante e pronto para enfrentar os desafios da vida cotidiana com uma mentalidade vencedora.</p>
+                
+            </div>
+
+            <div class="service">
+                <video src="6035960_Gym_Fitness_Fit_1280x720.mp4" autoplay muted loop alt="Consultoria de Dados"></video>
+                <h3>Transforme seu Corpo e Mente</h3>
+                <p>O boxe é mais do que apenas um esporte - é uma jornada de transformação pessoal. À medida que você se dedica aos treinos, perceberá não apenas uma melhoria em sua força física e resistência, mas também um aumento na clareza mental, foco e resiliência. Prepare-se para uma vida mais equilibrada e plena.</p>
+                
+            </div>
+
+            <div class="service">
+                <video src="1105970_1080p_4k_2k_1920x1080.mp4" autoplay muted loop alt="Consultoria de Dados"></video>
+                <h3>Supere seus Limites, Redefina sua Vida</h3>  
+                <p>Ao praticar o boxe, você não apenas desenvolve habilidades de autodefesa, mas também fortalece seu corpo e mente de maneira holística. Experimente uma sensação renovada de autoconfiança, determinação e bem-estar em todas as áreas da sua vida.</p>
+                
+            </div>
+        </div>
+
+
+        <div class="service-container">
+            <div class="service">
+                <video src="5123498_Person_People_Kid_1920x1080.mp4" autoplay muted loop alt="Consultoria de Dados"></video> 
+                <h3>Transformando Vidas Jovens Através do Boxe</h3>               
+                <p>
+                    O boxe para crianças vai além do simples treinamento físico. É uma oportunidade para desenvolver habilidades essenciais e valores que promovem uma vida plena. Nossas aulas não apenas fortalecem o corpo, mas também ensinam respeito, autocontrole e trabalho em equipe. Preparamos nossos jovens alunos para enfrentar os desafios da vida com confiança e integridade. Bem-vindo a um lugar onde cada criança é encorajada a alcançar seu verdadeiro potencial, dentro e fora do ringue.</p>
+                
+            </div>
+
+            <div class="service">
+                <video src="6035956_Gym_Fitness_Fit_1280x720.mp4" autoplay muted loop alt="Consultoria de Dados"></video>
+                <h3>Construa uma Base Sólida para uma Vida Plena</h3>
+                <p>Além de desenvolver habilidades de autodefesa e condicionamento físico, você está construindo uma base sólida para uma vida plena e gratificante. Experimente níveis elevados de energia, autoconfiança e bem-estar que se estendem muito além das quatro paredes do nosso ginásio</p>
+                
+            </div>
+
+            <div class="service">
+                <video src="4932047_Taekwondo_Sport_Person_1280x720.mp4" autoplay muted loop alt="Consultoria de Dados"></video>
+                
+                <h3>Liberte-se do Estresse, Abra-se para a Serenidade</h3>
+                <p>O boxe oferece mais do que apenas um treino físico - é uma forma de terapia. Liberte-se do estresse acumulado, encontre clareza mental e experimente uma sensação de serenidade que se estende além do ringue.</p>
+            </div>
+        </div>
+
+        <section id="depoimentos"></section>
+
+        <h2>Depoimentos</h2>
+
+        <section>
+            <section class="testimonial-container">
+                <div class="testimonial">
+                <img src="tall-attractive-sportsman-posing-boxing-gloves.jpg" alt="Depoimento 1">
+                <strong>"Treinar na Jr's Knockout Academy mudou minha vida. Antes, eu lutava com problemas de autoconfiança e estresse. Mas através do boxe, encontrei uma maneira de canalizar minhas energias de forma positiva. Os treinadores são incríveis e o ambiente é acolhedor. Agora, sinto-me mais forte, confiante e focado em todas as áreas da minha vida."</strong></p>
+                <p>- Rafael Oliveira</p>
+                
+            </div>
+
+            
+                <div class="testimonial">
+                <img src="young-woman-boxer-training-gym.jpg" alt="Depoimento 2">
+                <strong>"Como mulher, eu estava um pouco hesitante em experimentar o boxe. Mas depois de me juntar à Jr's Knockout Academy, descobri um novo senso de empoderamento e força interior. Os treinos desafiadores me ajudaram a me superar de maneiras que nunca imaginei. Além disso, encontrei uma comunidade de apoio incrível aqui. É uma experiência transformadora que recomendo a todas as mulheres."</strong>
+                <p>- Ana Clara</p>
+            </div>
+
+            
+                <div class="testimonial">
+                <img src="joyful-young-boy-boxer-with-blonde-hair-dressed-white-t-shirt-with-boxing-gloves-posing-studio-isolated-dark-textured-background.jpg" alt="Depoimento 3">
+                <strong>"A Jr's Knockout Academy é o lugar mais legal para treinar boxe! Os treinadores são super legais e nos ensinam movimentos incríveis. Eu me divirto muito aqui e também aprendo a ser mais forte e disciplinado. Agora, quando estou no ringue, sinto-me invencível! É como se eu pudesse conquistar o mundo."</strong>
+                <p>- Lorenzo Gabriel</p>
+            </div>
+        </section>
+        
+
+        
+
+
+
+
+
+<!-- Adicione este código dentro da seção "Sobre Nós" -->
+<section id="sobre-nos"></section>
+<section class="about-us-section">
+    <div class="section-content">
+        <div class="section-text">
+            <h2>Sobre nós</h2>
+            <p>Bem-vindos à Knockout Academy Jr's! Somos uma academia comprometida em nutrir mentes jovens e curiosas, moldando os futuros líderes e inovadores. Com uma abordagem educacional centrada no aluno e enraizada na excelência acadêmica, promovemos o desenvolvimento holístico, incentivando a criatividade, o pensamento crítico e o crescimento pessoal. Nossos educadores dedicados criam um ambiente acolhedor e estimulante, onde cada criança é encorajada a alcançar seu potencial máximo.</p>
+            <p>Com programas diversificados e oportunidades de desenvolvimento, preparamos nossos alunos para enfrentar os desafios do mundo real. Junte-se a nós nesta jornada de descoberta, aprendizado e crescimento na Knockout Academy Jr's, onde cada passo é uma oportunidade para brilhar e alcançar o extraordinário. Seja bem-vindo!</p>
+        </div>
+        <div class="section-image">
+            <img src="Sem título.png" alt="Imagem sobre nós" class="imagem-sobre-nos">
+
+
+        </div>
+    </div>
+</section>
+
+<section id="contato" class="contact-section"></section>
+
+
+<section id="contato" class="contact-section">
+    <div class="container">
+        <!-- Atualize o atributo action com o endereço de e-mail desejado -->
+        
+        <form action="https://contate.me/pcocore" method="post" enctype="text/plain">
+            <label for="fname">Nome</label>
+            <input type="text" id="fname" name="fname">
+          
+            <label for="email">E-mail</label>
+            <input type="text" id="email" name="email">
+          
+            <label for="message">Entre em contato</label>
+            <textarea id="message" name="message" style="height:200px"></textarea>
+          
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <div class="contact-info">
+        <h3>Fale Conosco</h3>
+        <p>Entre em contato conosco usando o formulário abaixo. Estamos ansiosos para ouvir você e ajudá-lo com suas necessidades de construção. </p>
+    </div>
+</section>
+
+
+<footer>
+    <div class="footer-container">
+        <!-- Informações da Empresa -->
+        <div class="company-info">
+            <p>Endereço: R. Miguel Petroni, 3220 Jardim Bandeirantes -  São Carlos, SP</p>
+            <p>Telefone: (16) 0000-0000</p>
+        </div>
+
+        <!-- Redes Sociais com ícones Font Awesome -->
+        <div class="social-media">
+            <a href="https://www.facebook.com/profile.php?viewas=100000686899395&id=61552685047689" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/pcocore/" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+
+        <!-- Navegação do Rodapé -->
+        <div class="footer-navigation">
+            <a href="#sobre-nos">Sobre Nós</a>
+            <a href="#servicos">Serviços</a>
+            <a href="#depoimentos">Depoimentos</a>
+            <a href="#contato">Contato</a>
+        </div>
+    </div>
+
+    <!-- Ícone do WhatsApp flutuante -->
+    <div class="whatsapp-floating">
+        <a href="https://contate.me/pcocore" target="_blank" title="Converse conosco no WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <!-- Informações da Empresa -->
+    <div class="company-info-mobile">
+        <p>© 2024 Jr's Knockout Academy </p>
+    </div>
+</footer>
